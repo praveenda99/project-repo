@@ -37,21 +37,6 @@ resource "cloudflare_page_rule" "foobar1" {
 
   actions {
    resolve_override = "taylorfrancis.net"
-   name    = "terraform"
-  value   = "213.212.74.246"
-  type    = "A"
-  ttl     = 1
-  proxied = true
-}
-
-resource "cloudflare_page_rule" "foobar1" {
-  priority = 1
-  zone_id = "a604f63b60057eb635575bc179fc7d3c"
-  target  = "*portal.taylorfrancis.net/*"
-  status   = "active"
-
-  actions {
-   resolve_override = "taylorfrancis.net"
   }
 }
-}
+
